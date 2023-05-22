@@ -1,0 +1,121 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel__card-wrapper {
+  padding: 0 10px;
+}
+
+.carousel__card {
+  display: flex;
+  flex-direction: column;
+  color: #4e4f51;
+  border: 1px solid rgba(193, 193, 193, 0.545);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.12);
+  transition: all 1s ease;
+
+  &:hover {
+    cursor: pointer;
+
+    .carousel__card__image {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.08);
+        animation: appear 0.2s;
+      }
+    }
+
+    .carousel__card__content__picker__btn {
+      background-color: rgb(41, 41, 41);
+    }
+  }
+}
+
+.carousel__card__header {
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+  background-color: #efdf00;
+}
+
+.carousel__card__image {
+  display: flex;
+  justify-content: center;
+  padding: 0 25px 15px;
+}
+
+.carousel__card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 11px;
+  background-color: #d9d9d6;
+}
+
+.carousel__card__content__title {
+  font-size: 0.9em;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.carousel__card__content__spec {
+  font-size: 0.75em;
+}
+
+.carousel__card__content__picker {
+  background-color: #fff;
+  display: flex;
+
+  h4 {
+    line-height: 100%;
+    padding: 7px 10px;
+    font-size: 1em;
+  }
+
+  .carousel__card__content__picker__units {
+    color: #959697;
+    line-height: 1;
+    font-size: 0.65em;
+  }
+}
+
+.carousel__card__content__picker__btn {
+  margin: 0 0 0 auto;
+  border: none;
+  font-size: 0.8em;
+  color: #fff;
+  background-color: black;
+  padding: 5px 20px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.carousel__card__content__addition {
+  font-size: 0.65em;
+
+  td {
+    * {
+      line-height: 100%;
+    }
+
+    &:nth-child(2) {
+      padding-left: 4px;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.expander__section--carousel {
+  margin: 0 0 40px;
+}
+
+.carousel {
+  display: flex;
+  width: 80%;
+  position: relative;
+  margin: 60px 0;
+}
+
+.carousel-title {
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+.carousel-title__heading {
+  font-weight: 700;
+  font-size: 2em;
+}
+.carousel-title__description {
+  font-size: 1.25em;
+}
+
+.carousel__content-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__content {
+  display: flex;
+
+  transition: all 350ms ease-out;
+  -ms-overflow-style: none; /* hide scrollbar in IE and Edge */
+  scrollbar-width: none; /* hide scrollbar in Firefox */
+}
+
+/* hide scrollbar in webkit browser */
+.carousel__content::-webkit-scrollbar,
+.carousel__content::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel__content > * {
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.carousel__content.show-2 > * {
+  width: 50%;
+}
+
+.carousel__content.show-3 > * {
+  width: calc(100% / 3);
+}
+
+.carousel__content.show-4 > * {
+  width: calc(100% / 4);
+}
+
+.left-arrow,
+.right-arrow {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  background-color: #fff;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  transform-origin: center;
+  border: none;
+}
+
+.left-arrow {
+  transform: rotate(180deg);
+  translate: 0 -50%;
+  left: -6%;
+}
+
+.right-arrow {
+  right: -6%;
+}
+
+.carousel-btn {
+  font-size: 1em;
+  line-height: 100%;
+  border: none;
+  padding: 15px 30px;
+}
+
+//~~~~~ If you want to remove control buttons on touchscreen devices use this: ~~~~~//
+// @media (hover: none) and (pointer: coarse) {
+//     .left-arrow, .right-arrow {
+//         display: none;
+//     }
+// }
+
+@media (max-width: 800px) {
+  .carousel-title {
+    font-size: 0.9em;
+  }
+
+  .left-arrow {
+    left: -7%;
+  }
+
+  .right-arrow {
+    right: -7%;
+  }
+}
+
+@media (max-width: 650px) {
+  .carousel__content-wrapper {
+    overflow: unset;
+  }
+
+  .carousel-title {
+    margin-top: 40px;
+    font-size: 0.75em;
+  }
+  
+  @media (hover: none) and (pointer: coarse) {
+    .left-arrow,
+    .right-arrow {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .left-arrow,
+  .right-arrow {
+    width: 25px;
+    height: 25px;
+  }
+
+  .left-arrow {
+    left: -8%;
+  }
+
+  .right-arrow {
+    right: -8%;
+  }
+
+  .carousel-btn {
+    padding: 14px 20px;
+    font-size: 0.8em;
+  }
+}

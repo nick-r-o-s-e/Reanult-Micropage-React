@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "NouvelR"; /*Can be any text*/
+  src: local("NouvelR"),
+    url("./assets/fonts/lat-cyr-regular-91411d7a68c408815073.ttf")
+      format("truetype");
+}
+
+body {
+  font-family: "NouvelR";
+  background-color: rgb(37, 37, 37);
+}
+
+.container-main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

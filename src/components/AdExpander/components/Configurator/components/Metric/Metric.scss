@@ -1,0 +1,27 @@
+.cofig__metric {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #7e7e7e;
+  text-align: center;
+  padding: 0 1em;
+}
+
+.config__metric__text {
+  font-size: 16px;
+}
+
+.config__metric__data {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+@media (max-width: 480px) {
+  .config__metric__text {
+    font-size: 0.75em;
+  }
+
+  .config__metric__data {
+    font-size: 32px;
+  }
+}

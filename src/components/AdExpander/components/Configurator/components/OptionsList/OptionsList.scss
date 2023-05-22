@@ -1,0 +1,22 @@
+.config__options {
+  justify-content: center;
+  width: 50%;
+}
+
+.config__options__item {
+  height: min-content;
+  width: 100%;
+}
+
+@media (max-width: 1080px) {
+  .config__options {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .config__options {
+    padding-left: 25px;
+    font-size: 0.9em;
+  }
+}

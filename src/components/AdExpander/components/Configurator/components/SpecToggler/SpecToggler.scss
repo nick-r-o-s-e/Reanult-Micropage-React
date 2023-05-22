@@ -1,0 +1,47 @@
+.spec-toggler {
+  border: none;
+  font-weight: 700;
+  background-color: #fff;
+  color: black;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.132);
+  padding: 15px 50px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: scale 0.2s linear, background-color 0.3s ease-out;
+
+  &:hover {
+    scale: 1.03;
+  }
+
+  &.active {
+    background-color: black;
+    color: #fff;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 800px) {
+  .spec-toggler {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 680px) {
+  .spec-toggler {
+    padding: 15px 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .spec-toggler {
+    font-size: 0.9em;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 440px) {
+  .spec-toggler {
+    font-size: 0.8em;
+    padding: 7px 20px;
+  }
+}
