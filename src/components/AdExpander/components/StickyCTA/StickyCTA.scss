@@ -1,8 +1,8 @@
 .expander__section--cta {
-  position: sticky;
-  left: 0;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  max-width: 1080px;
   background-color: black;
   padding: 12px 60px;
   flex-direction: row;
