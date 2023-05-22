@@ -9,7 +9,7 @@
 - Fully responsive(max-width of the main container is 1080px)
 - Custom Carousel component for the responsiveness
 
-## Deployed on [surge](https://surge.sh/) demo: ( https://jolly-adjustment.surge.sh/)
+## Deployed on [surge](https://surge.sh/) demo: (https://lucky-oranges.surge.sh/)
 
 ### Dev server
 
