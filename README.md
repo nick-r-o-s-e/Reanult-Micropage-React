@@ -4,7 +4,7 @@
 
 #### Functioning micropage, as it would be used for Expander ad format:
 
-- Maximum of the components abstraction
+- Fully abtsracted expander component
 - Configurator loading and error states
 - Fully responsive(max-width of the main container is 1080px)
 - Custom Carousel component for responsiveness
